@@ -11,8 +11,8 @@ class ButtonsActivity : AppCompatActivity() {
 
     //variavel global pro binding
     private val binding by lazy { ActivityButtonsBinding.inflate(layoutInflater) }
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(binding.root)
     }
 

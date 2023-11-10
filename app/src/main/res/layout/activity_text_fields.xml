@@ -39,7 +39,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:counterEnabled="true"
-        android:hint="Label">
+        app:counterMaxLength="20"
+        app:startIconTint="#F44336"
+        app:startIconDrawable="@drawable/ic_person"
+        app:endIconDrawable="@drawable/ic_person"
+        app:helperText="Campo obrigatório!"
+        app:endIconMode="custom"
+        android:hint="Name">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -47,6 +53,21 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperText="Digite apenas números"
+        app:errorIconDrawable="@drawable/ic_person"
+        app:helperTextTextColor="#9C27B0"
+        android:hint="Label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </LinearLayout>

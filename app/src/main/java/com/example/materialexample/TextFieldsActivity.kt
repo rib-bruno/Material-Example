@@ -11,9 +11,11 @@ class TextFieldsActivity : AppCompatActivity(){
 
     private val binding by lazy { ActivityTextFieldsBinding.inflate(layoutInflater) }
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        binding.inputError.error = "Campo obrigatorio!"
     }
 
     companion object {
