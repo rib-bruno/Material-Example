@@ -31,5 +31,9 @@ class MainActivity : AppCompatActivity() {
             ModalBottomSheet.start(supportFragmentManager)
         }
 
+        binding.cvTopAppBar.setOnClickListener {
+            startActivity(TopAppBarActivity.createIntent(this))
+        }
+
     }
 }
