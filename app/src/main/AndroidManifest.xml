@@ -26,6 +26,7 @@
         <activity android:name="com.example.materialexample.TopAppBarActivity" />
         <activity android:name="com.example.materialexample.BottomAppBarActivity" />
         <activity android:name="com.example.materialexample.SnackbarActivity" />
+        <activity android:name="com.example.materialexample.BottomNavigationActivity" />
     </application>
 
 </manifest>

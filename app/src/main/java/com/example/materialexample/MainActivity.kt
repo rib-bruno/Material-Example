@@ -43,5 +43,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(SnackbarActivity.createIntent(this))
         }
 
+        binding.cvBottomNavigation.setOnClickListener {
+            startActivity(BottomNavigationActivity.createIntent(this))
+        }
+
     }
 }
